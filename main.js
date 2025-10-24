@@ -1,8 +1,8 @@
 // gen random color
-let randomNumber1 = Math.floor(Math.random() * 256);
-let randomNumber2 = Math.floor(Math.random() * 256);
-let randomNumber3 = Math.floor(Math.random() * 256);
-let finalColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
+let red = Math.floor(Math.random() * 255);
+let green = Math.floor(Math.random() * 255);
+let blue = Math.floor(Math.random() * 255);
+let finalColor = `rgb(${red}, ${green}, ${blue})`;
 
 // get elems doc
 let colorPlace = document.querySelector("#colorPlace");
@@ -15,10 +15,10 @@ codePlace.innerHTML = finalColor;
 btnGen.addEventListener("click", generate);
 
 function generate() {
-  randomNumber1 = Math.floor(Math.random() * 256);
-  randomNumber2 = Math.floor(Math.random() * 256);
-  randomNumber3 = Math.floor(Math.random() * 256);
-  finalColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
+  red = Math.floor(Math.random() * 256);
+  green = Math.floor(Math.random() * 256);
+  blue = Math.floor(Math.random() * 256);
+  finalColor = `rgb(${red}, ${green}, ${blue})`;
   colorPlace.style.backgroundColor = finalColor;
   codePlace.innerHTML = finalColor;
 }
