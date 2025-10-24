@@ -55,3 +55,10 @@ body {
 .btn-gen:hover {
   box-shadow: 12px 6px 12px -4px #00000020 inset;
 }
+
+@media screen and (max-width: 600px) {
+  *,
+  *:hover {
+    cursor: default;
+  }
+}
